@@ -7,7 +7,7 @@ Demo URL : https://nayembinsayed.github.io/FeedbackForum/index.html
 1. SignIn/SignUp
 2. Post any Question
 3. Contents/Question are Voted Up/Down or answerd by other memebers
-4. Follow each other ased on people's interests
+4. Follow each other based on people's interests
 5. Update Profile & About
 
 
