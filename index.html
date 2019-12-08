@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Feedback</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <h3>Feedback</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ask_question.html">Ask Question</a>
+                </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="myprofile.html">My Profile</a>
+                </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="SignIn/index.html">SignIn</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="SignUp/index.html">SignUp</a>
+                 </li>
+    
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container-fluid my-2">
+            <section class="content my-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Box Comment -->
+                            <div class="card card-widget">
+                                <div class="card-header">
+                                    <div class="user-block">
+                                        <img class="rounded-circle img-thumbnail" style="height: 35px;" src="img/user1-128x128.jpg" alt="User Image">
+                                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                        <span class="description">Shared publicly - 7:30 PM Today</span>
+                                    </div>
+                                    <!-- /.user-block -->
+
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <!-- <img class="img-fluid pad" src="img/photo2.png" alt="Photo"> -->
+                                    <p>
+                                        <h3>How to ask a question?</h3>
+                                    </p>
+
+                                    <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i> Upvote</button>
+                                    <button type="button" class="btn btn-default btn-sm"><i class="far fa-thumbs-up"></i> Downvote</button>
+                                    <span class="float-right text-muted">100 Upvote - 2 Downvote</span>
+                                    <small>2 Comments</small>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer card-comments">
+                                    <div class="card-comment">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm rounded-circle img-thumbnail" style="height: 35px;" src="img/user3-128x128.jpg" alt="User Image">
+                                        <span class="username">
+                                            Maria Gonzales
+                                            <span class="text-muted float-right">8:03 PM Today</span>
+                                        </span><!-- /.username -->
+                                        <div class="comment-text">
+                                            It is a long established fact that a reader will be distracted
+                                            by the readable content of a page when looking at its layout.
+                                        </div>
+                                        <!-- /.comment-text -->
+                                    </div>
+                                    <!-- /.card-comment -->
+                                    <div class="card-comment my-2">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm rounded-circle img-thumbnail" style="height: 35px;" src="img/user4-128x128.jpg" alt="User Image">
+                                        <span class="username">
+                                            Luna Stark
+                                            <span class="text-muted float-right">8:03 PM Today</span>
+                                        </span><!-- /.username -->
+                                        <div class="comment-text">
+                                            It is a long established fact that a reader will be distracted
+                                            by the readable content of a page when looking at its layout.
+                                        </div>
+                                        <!-- /.comment-text -->
+                                    </div>
+                                    <!-- /.card-comment -->
+                                </div>
+                                <!-- /.card-footer -->
+                                <div class="card-footer">
+                                    <form action="#" method="post">
+                                        <img class="img-fluid img-circle img-sm rounded-circle img-thumbnail" style="height: 35px;" src="img/user4-128x128.jpg" alt="Alt Text">
+                                        <span class="username">
+                                            Nayem
+                                        </span><!-- /.username -->
+                                        <!-- .img-push is used to add margin to elements next to floating images -->
+                                        <div class="img-push">
+                                            <input type="text" class="form-control form-control-sm" placeholder="Press enter to post comment">
+                                        </div>
+                                        <button name="button" type="submit" class="btn btn-outline-primary fa fa-send-o my-2" style="font-size:18px;color:red;float: right;"></button>
+                                    </form>
+                                </div>
+                                <!-- /.card-footer -->
+                            </div>
+
+                        </div>
+                    </div><!-- /.container-fluid -->
+            </section>
+            
+             <section class="content my-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Box Comment -->
+                            <div class="card card-widget">
+                                <div class="card-header">
+                                    <div class="user-block">
+                                        <img class="rounded-circle img-thumbnail" style="height: 35px;" src="img/user1-128x128.jpg" alt="User Image">
+                                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                        <span class="description">Shared publicly - 7:30 PM Today</span>
+                                    </div>
+                                    <!-- /.user-block -->
+
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <!-- <img class="img-fluid pad" src="img/photo2.png" alt="Photo"> -->
+                                    <p>
+                                        <h3>How Google Search Works?</h3>
+                                    </p>
+
+                                    <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i> Upvote</button>
+                                    <button type="button" class="btn btn-default btn-sm"><i class="far fa-thumbs-up"></i> Downvote</button>
+                                    <span class="float-right text-muted">100 Upvote - 2 Downvote</span>
+                                    <small>2 Comments</small>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer card-comments">
+                                    <div class="card-comment">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm rounded-circle img-thumbnail" style="height: 35px;" src="img/user3-128x128.jpg" alt="User Image">
+                                        <span class="username">
+                                            Maria Gonzales
+                                            <span class="text-muted float-right">8:03 PM Today</span>
+                                        </span><!-- /.username -->
+                                        <div class="comment-text">
+                                            It is a long established fact that a reader will be distracted
+                                            by the readable content of a page when looking at its layout.
+                                        </div>
+                                        <!-- /.comment-text -->
+                                    </div>
+                                    <!-- /.card-comment -->
+                                    <div class="card-comment my-2">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm rounded-circle img-thumbnail" style="height: 35px;" src="img/user4-128x128.jpg" alt="User Image">
+                                        <span class="username">
+                                            Luna Stark
+                                            <span class="text-muted float-right">8:03 PM Today</span>
+                                        </span><!-- /.username -->
+                                        <div class="comment-text">
+                                            It is a long established fact that a reader will be distracted
+                                            by the readable content of a page when looking at its layout.
+                                        </div>
+                                        <!-- /.comment-text -->
+                                    </div>
+                                    <!-- /.card-comment -->
+                                </div>
+                                <!-- /.card-footer -->
+                                <div class="card-footer">
+                                    <form action="#" method="post">
+                                        <img class="img-fluid img-circle img-sm rounded-circle img-thumbnail" style="height: 35px;" src="img/user4-128x128.jpg" alt="Alt Text">
+                                        <span class="username">
+                                            Nayem
+                                        </span><!-- /.username -->
+                                        <!-- .img-push is used to add margin to elements next to floating images -->
+                                        <div class="img-push">
+                                            <input type="text" class="form-control form-control-sm" placeholder="Press enter to post comment">
+                                        </div>
+                                        <button name="button" type="submit" class="btn btn-outline-primary fa fa-send-o my-2" style="font-size:18px;color:red;float: right;"></button>
+                                    </form>
+                                </div>
+                                <!-- /.card-footer -->
+                            </div>
+
+                        </div>
+                    </div><!-- /.container-fluid -->
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>

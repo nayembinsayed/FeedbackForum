@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+
+body { 
+	min-height: 100vh; width: 100%; 
+	xoverflow: hidden;
+	color: #FFEABB; 
+	font-size: 16px; 
+	font-family: 'Lato';
+	
+	/* Background gradient courtesy of draGGradients:
+	https://elrumordelaluz.github.io/draGGradients/ 
+	"Cheer Up Emo Kid" */
+	
+	background: 
+		radial-gradient(circle at 1.98% 14.97%, #347474, transparent 100%),
+		radial-gradient(circle at 98.02% 52.96%, #ffeecc, transparent 100%),
+		radial-gradient(circle at 50% 50%, #52de97, #c0ffb3 100%);
+} 
+p { margin: 15px 0; line-height: 24px; color: gainsboro; }
+a { color: dodgerblue; text-decoration: none; border-bottom: 1px dotted; }
+a:hover { color: #ffeecc; }
+
+.sign{
+
+	text-align: center;
+	font-weight;: 900;
+
+}
+
+
+.container { 
+	max-width: 960px; 
+	height: 100%;
+	margin: 0 auto; 
+	padding: 20px;
+}
+
+.clear { clear: both; }
+
+/* ------------------- */
+/* PEN STYLES      -- */
+/* ----------------- */
+
+form { width: 300px; margin: 40px auto; padding-left: 12.5px;}
+
+input:focus { outline: none; }
+
+.field {
+	display: block;
+	box-sizing: border-box;
+	width: 300px; height: 50px;
+	margin-top: -1px;
+	text-align: center;
+	color: #ffeecc;
+	background-color: rgba(0,0,0,0.5);
+	background-color: transparent;
+	border: 1px solid #347474;
+}
+
+.field::-webkit-input-placeholder { color: #347474; opacity: 0.75; }
+.field:-moz-placeholder { color: #347474; opacity: 0.75; }
+.field::-moz-placeholder { color: #347474; opacity: 0.75; }
+.field:-ms-input-placeholder { color: #347474; opacity: 0.75; }
+
+/* I am eschewing DRY for organization of concept */
+
+/* Corners -------- */
+#one, #three {
+	/* border-top-right-radius: 25px; */
+	border-bottom-right-radius: 25px;
+}
+#two, #four {
+	/* border-top-left-radius: 25px; */
+	border-bottom-left-radius: 25px;
+}
+
+/* Borders -------- */
+#one, #three { border-width: 1px 1px 1px 0; }
+#two, #four { border-width: 1px 0 1px 1px; }
+
+/* Offset -------- */
+#one, #three { padding-right: 25px; }
+#two, #four { margin-left: -25px; padding-left: 25px; }
+
+/* Above & Below --------- */
+.above, .below {
+	width: 150px; height: 50px;
+	margin-top: -1px;
+	border: 1px solid #347474;
+}
+
+.above {
+	margin-left: -25px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-width: 0 0 1px 0;
+}
+
+.below {
+	position: relative;
+	float: right;
+	/* border-top-right-radius: 25px; */
+	border-bottom-right-radius: 25px;
+	border-width: 1px 0 0 0;
+}
+
+/* Go -------- */
+#go {
+	height: 50px; width: 100px;
+	position: absolute;
+	top: -1px; right: 0px;
+	color: #347474;
+	background-color: transparent;
+	border: 1px solid #347474;
+	/* border-top-right-radius: 25px; */
+	border-bottom-right-radius: 25px;
+	/* border-top-left-radius: 25px; */
+	/* border-bottom-left-radius: 25px; */
+	cursor: pointer;
+	transition: all 0.5s ease;
+	border-left: none;
+}
+
+#go:focus, #go:hover { color: white; background-color:#a5c4a1; }
+
+/* Your Words ----- */
+#your-words {
+	width: 300px;
+	margin: 100px auto 20px auto;
+	clear: both;
+	color: tomato;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 300;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+/* Reset ------ */
+a#reset { 
+	float: right; 
+	color: white;
+	border: 1px solid white;
+	padding: 5px;
+	transition: all 0.5s ease;
+}
+
+a#reset:hover { color: tomato; border-color: tomato;}
+
+a:link {
+	text-decoration: none;
+  }
+

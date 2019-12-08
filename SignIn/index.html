@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <title>Animated Login!</title>
+    <script>
+        $(function() {
+            $('input,textarea').focus(function() {
+                $(this).data('placeholder', $(this).attr('placeholder'))
+                    .attr('placeholder', '');
+            }).blur(function() {
+                $(this).attr('placeholder', $(this).data('placeholder'));
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p class="sign" style="font-size: 30px; margin-top: 95px; color:#CFDAB9">Sign In</p>
+        <form name="windingroad" id="windingroad" onsubmit="return yes(this);">
+            <!-- When form is submitted, run the js to post the poem -->
+            <div class="above"></div>
+            <!-- Name needed for the form submit js; class for styling,
+            id and onkeyUP for jumping to next field -->
+            <input name="one" class="field" id="one" type="text" maxlength="30" onkeyUP="moveOnMax(this,'two')" placeholder="Enter Email..." autofocus>
+            <input name="two" class="field" id="two" type="password" maxlength="30" onkeyUP="moveOnMax(this,'three')" placeholder="Enter Password...">
+            <div class="below"><input id="go" type="submit" name="submitbtn" value="Submit"></div>
+            <div class="clear"></div>
+        </form>
+        <!-- Where your lonely words will appear -->
+        <p id="your-words"></p>
+        <div class="row">
+            <div class="col-md text-center">
+                <a href="www.facebook.com"> <i class="fab fa-facebook fa-2x px-3" name="facebookicon" style="color: #4267B2;"></i></a>
+            
+         
+                <a href="www.google.com"><i class="fab fa-google-plus fa-2x" name="googleicon" style="color:#EA4335"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        /*global $, document, window, setTimeout, navigator, console, location*/
+        // Jump to the next field once you hit max characters
+        function moveOnMax(field, nextFieldID) {
+            if (field.value.length >= field.maxLength) {
+                document.getElementById(nextFieldID).focus();
+            }
+        };
+        // Upon form submit, insert form values into the page
+        function yes(form) {
+            var one = document.forms.windingroad.one.value;
+            var two = document.forms.windingroad.two.value;
+            var three = document.forms.windingroad.three.value;
+            var four = document.forms.windingroad.four.value;
+            document.getElementById('your-words').innerHTML = one + "<br>" + two + "<br>" + three + "<br>" + four;
+            // Use CSS to fade it in
+            document.getElementById('your-words').style.opacity = "1";
+            // Doesn't actually submit the form
+            return false;
+        };
+        // Reset the form with the reset button
+        function reset() {
+            document.getElementById('windingroad').reset();
+            document.getElementById('your-words').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
